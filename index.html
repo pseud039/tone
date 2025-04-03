@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href ="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="head">
+        <div class="logo">Tone
+        </div>
+        <div class="dropdownlist">
+            <button class="dropdown">Instrument</button>
+            <div class="instruments">
+                <a href="#">Synth</a>
+                <a href="#">MetalSynth</a>
+                <a href="#">PluckSynth</a>
+                <a href="#">MembraneSynth</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <img src="black and white animation GIF by Alastair Gray.gif" class="img1">
+        <!-- <img src="music video art GIF by Angular Geometry.gif" class="img2"> -->
+        <button data-type="81" data-chord= "A3,C4,E4" chord-type = "major" class="key">
+            <kbd>A major</kbd>
+        </button>
+        <button data-type="65" data-chord= "A3,C#4,E4" chord-type="minor" class="key">
+            <kbd>a minor</kbd>
+        </button>
+        <button data-type="82" data-chord= "B3,D4,F#4" chord-type = "major" class="key">
+            <kbd>B major</kbd>
+        </button>
+        <button data-type="66" data-chord= "B3,D#4,F#4" chord-type="minor" class="key">
+            <kbd>b minor</kbd>
+        </button>
+        <button data-type="83" data-chord= "C3,E3,G3" chord-type = "major"  class="key">
+            <kbd>C major</kbd>
+        </button>
+        <button data-type="67" data-chord= "C3,E#3,G3" chord-type="minor" class="key">
+            <kbd>c minor</kbd>
+        </button>
+        <button data-type="84" data-chord= "D3,F3,A3" chord-type = "major"  class="key">
+            <kbd>D major</kbd>
+        </button>
+        <button data-type="68" data-chord= "D3,F#3,A3" chord-type="minor" class="key">
+            <kbd>d minor</kbd>
+        </button>
+        <button data-type="85" data-chord= "E3,G#3,B3" chord-type = "major"  class="key">
+            <kbd>E major</kbd>
+        </button>
+        <button data-type="69" data-chord= "E3,G3,B3," chord-type="minor" class="key">
+            <kbd>e minor</kbd>
+        </button>
+        <button data-type="86" data-chord= "F3,A3,C3" chord-type = "major"  class="key">
+            <kbd>F major</kbd>
+        </button>
+        <button data-type="70" data-chord= "F3,Ab3,C3" chord-type="minor" class="key">
+            <kbd>f minor</kbd>
+        </button>
+        <button data-type="87" data-chord= "G3,B3,D4" chord-type = "major"  class="key">
+            <kbd>G major</kbd>
+        </button>
+        <button data-type="71" data-chord= "G3,Bb3,D4" chord-type="minor" class="key">
+            <kbd>g minor</kbd>
+        </button>
+    </div>
+    <div class="footer">
+        <p>
+            Press <b>'a'</b> for A minor <br><b>'Shift + a'</b> for A major
+        </p>
+    </div>
+    
+</body>
+<script src="https://unpkg.com/tone" defer></script>
+<script src="script.js" defer></script>
+</html>
